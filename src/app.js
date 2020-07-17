@@ -23,23 +23,23 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Lia'
+        name: 'Liamara Ferreira'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Me',
-        name: 'Lia'
+        title: 'About',
+        name: 'Liamara Ferreira'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'This site, for now, only provides de current weather in any part of the world,' +
-        ' it will be improved in the future with more information!',
+        ' it can be improved in the future with more information!',
         title: 'Help',
-        name: 'Lia'
+        name: 'Liamara Ferreira'
     })
 })
 
@@ -72,7 +72,7 @@ app.get('/weather', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Lia',
+        name: 'Liamara Ferreira',
         errorMessage: 'Help article not found.'
     })
 })
@@ -80,7 +80,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Lia',
+        name: 'Liamara Ferreira',
         errorMessage: 'Page not found.'
     })
 })
